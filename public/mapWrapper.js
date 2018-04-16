@@ -30,3 +30,11 @@ MapWrapper.prototype.addInfoWindow = function (coords, text) {
     infoWindow.open(this.map, marker);
   });
 }
+
+MapWrapper.prototype.geoLocate = function () {
+  navigator.geolocation.getCurrentPosition(function (position) {
+    var center = { lat: position.coords.latitude, lng: position.coords.longitude };
+    this.googleMap.setCenter(center);
+    this.addMarker(center);
+  }.bind(this));
+}
