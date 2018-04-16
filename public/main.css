@@ -1,10 +1,28 @@
 #main-map {
   width: 500px;
   height: 500px;
+  border-color: orange;
+  border-width: thick;
+  border-style: solid;
 }
 
 button {
   margin: 20px;
   font-size: 20px;
   border-radius: 10px;
+  color: orange;
+  background-color: #008080;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("https://thewallpaper.co/wp-content/uploads/2017/08/beach-widescreen-images-travel-shellabstract-art-compass-amazing-photos-sand-free-stock-photos-stock-images-bokeh-abstract-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: #008080;
 }
